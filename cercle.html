@@ -1,0 +1,45 @@
+<html>
+
+
+<head>
+
+<script type="text/javascript" src="jquery-3.1.1.js"> </script>
+
+<script>
+
+	$(document).ready( function () {
+	$('#a').css('color' , 'green');
+	
+		$('#s1').click(function (){ 
+
+		$('#res').val(( parseInt($('#r').val() ) * parseInt($('#r').val() ) * 3.14 ));
+		
+		});
+		
+				$('#p1').click(function (){ 
+
+					$('#res').val(( 2 * parseInt($('#r').val() ) * 3.14 ));
+				
+				});
+
+	});
+	 
+ </script>
+
+</head>
+
+<body >
+
+<img src="wlc1.jpg">
+
+<center> <div id='a'> <h2> *** Calcul Cercle *** </h2> </center> </div>
+
+	Rayon : <input type="text" value="" id="r"> <br> 
+	  Resultat :     <input type="text" value="" id="res"> <br>
+	
+	<input type="button" value="Surface" id="s1">
+	<input type="button" value="Perimetre" id="p1"><br> <br>
+<a href=vide.html><button>Quiter</button></a>
+</body>
+
+</html>

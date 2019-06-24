@@ -1,0 +1,41 @@
+<html>
+
+
+<head>
+
+<script type="text/javascript" src="jquery-3.1.1.js"> </script>
+
+<script>
+
+	$(document).ready( function () {
+	$('#a').css('color' , 'green');
+	$('#b1').click(function (){ 
+
+$('#res').val( ( parseInt($('#lo').val() ) * parseInt($('#la').val() ) ));
+	
+	});
+		
+			$('#b2').click(function (){ 
+
+			$('#res').val( ( parseInt($('#lo').val() ) + parseInt($('#la').val() ) )*2);
+	
+			});
+
+	});
+	 
+ </script>
+
+</head>
+
+<body>
+<img src="wlc1.jpg">
+<center> <div id='a'> <h2> *** Calcul Rectangle *** </h2> </div> </center>
+	Longueur : <input type="text" value="" id="lo"> <br> 
+	Largeur  :  <input type="text" value="" id="la"> <br>
+	    Resultat :         <input type='text' value='' id='res'> <br>
+	<input type="button" value="Surface" id="b1">
+	<input type="button" value="Perimetre" id="b2"> <br> <br>
+<a href=vide.html><button>Quiter</button></a>
+</body>
+
+</html>
